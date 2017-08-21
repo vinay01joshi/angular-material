@@ -5,15 +5,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import {MdCheckboxModule} from '@angular/material';
+import { MaterialFormControlsComponent } from './material-form-controls/material-form-controls.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaterialFormControlsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MdCheckboxModule
+    MdCheckboxModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
