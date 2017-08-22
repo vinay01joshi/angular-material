@@ -1,4 +1,6 @@
 
+<h1>Checkobx</h1>
+
  <md-checkbox
  #showDetails
  [value]="2"
@@ -9,3 +11,11 @@
  some detials...
 </div>
 
+<hr>
+<h1>Radio</h1>
+<!-- we can also bind the md-radio-buton whith property binding and alternate 
+is to set data in radio-gorup value input property [checked]="isChecked" -->
+<md-radio-group value="2">
+  <md-radio-button value="1">Male</md-radio-button>   
+  <md-radio-button value="2">Female</md-radio-button>
+</md-radio-group>

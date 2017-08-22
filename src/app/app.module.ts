@@ -4,7 +4,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import {MdCheckboxModule} from '@angular/material';
+import { MdCheckboxModule,MdRadioModule} from '@angular/material';
 import { MaterialFormControlsComponent } from './material-form-controls/material-form-controls.component';
 
 @NgModule({
@@ -15,7 +15,8 @@ import { MaterialFormControlsComponent } from './material-form-controls/material
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MdCheckboxModule    
+    MdCheckboxModule,
+    MdRadioModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
