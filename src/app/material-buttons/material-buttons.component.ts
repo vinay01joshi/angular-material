@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialButtonsComponent implements OnInit {
 
+  catagories = [
+    {name: 'Beginner'},
+    {name: 'Intermediate'},
+    {name: 'Advanced'},
+  ];
   constructor() { }
 
   ngOnInit() {
+  }
+
+  selectCatagory(catagory){
+    this.catagories
+      .filter(c => c !=  catagory)
+      .forEach( c=> c['selected'] = false);
+    catagory.selected = !catagory.sele;
   }
 
 }

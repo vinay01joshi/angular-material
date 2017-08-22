@@ -5,3 +5,13 @@
 <button  color="accent" md-raised-button>Accent</button>
 <button  color="warn" md-raised-button>Warn</button>
 <button  color="primary" md-fab><md-icon>check</md-icon></button>
+
+<hr>
+
+<h1>Chips</h1>
+<md-chip-list>
+  <md-chip
+    (click)="selectCatagory(catagory)" 
+    [selected]="catagory.selected"
+    *ngFor="let catagory of catagories">{{ catagory.name }}</md-chip>
+</md-chip-list>
