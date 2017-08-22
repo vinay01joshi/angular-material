@@ -12,15 +12,18 @@ import { MdCheckboxModule
         , MdDatepickerModule
         , MdNativeDateModule
   , MdIconModule, 
-        MdButtonModule} from '@angular/material';
+  MdButtonModule,
+        MdChipsModule} from '@angular/material';
 import { MaterialFormControlsComponent } from './material-form-controls/material-form-controls.component';
 import { MaterialIconComponent } from './material-icon/material-icon.component';
+import { MaterialButtonsComponent } from './material-buttons/material-buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MaterialFormControlsComponent,
-    MaterialIconComponent
+    MaterialIconComponent,
+    MaterialButtonsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { MaterialIconComponent } from './material-icon/material-icon.component';
     MdDatepickerModule,
     MdNativeDateModule,
     MdIconModule,
-    MdButtonModule
+    MdButtonModule,
+    MdChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
