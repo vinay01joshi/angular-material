@@ -15,6 +15,8 @@ export class MaterialFormControlsComponent {
     {id:5,name:'White'}
   ]
   color = 2;
+  minDate = new Date(2017,1,1);
+  maxDate = new Date(2017,8,1)
   constructor() { }
 
   onChange($event){

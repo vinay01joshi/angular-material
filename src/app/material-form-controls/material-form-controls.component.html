@@ -49,3 +49,16 @@ is to set data in radio-gorup value input property [checked]="isChecked" -->
 <md-input-container>
   <textarea mdInput mdTextareaAutosize rows="2"></textarea>
 </md-input-container>
+
+<hr>
+<h1>DatePicker</h1>
+
+<md-input-container>
+  <input
+    (focus)="birthdate.open()" 
+    [min]="minDate"
+    [max]="maxDate"
+    type="text" mdInput [mdDatepicker]="birthdate">
+  <button mdSuffix [mdDatepickerToggle]="birthdate"></button>
+</md-input-container>
+<md-datepicker #birthdate touchUi="true"></md-datepicker>
