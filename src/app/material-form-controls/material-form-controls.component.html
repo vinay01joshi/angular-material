@@ -1,3 +1,4 @@
+<h1>Angular Materail Form Control</h1>
 
 <h1>Checkobx</h1>
 
@@ -19,3 +20,10 @@ is to set data in radio-gorup value input property [checked]="isChecked" -->
   <md-radio-button value="1">Male</md-radio-button>   
   <md-radio-button value="2">Female</md-radio-button>
 </md-radio-group>
+
+<hr>
+<h1>Dropdown</h1>
+
+<md-select [(ngModel)]="color">
+  <md-option *ngFor="let color of colors" [value]="color.id"> {{ color.name }}</md-option>
+</md-select>

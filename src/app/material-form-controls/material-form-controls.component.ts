@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialFormControlsComponent {
   isChecked=true;
+  colors = [
+    {id:1,name:'Red'},
+    {id:2,name:'Green'},
+    {id:3,name:'Blue'},
+    {id:4,name:'Yellow'},
+    {id:5,name:'White'}
+  ]
+  color = 2;
   constructor() { }
 
   onChange($event){
