@@ -27,3 +27,19 @@ is to set data in radio-gorup value input property [checked]="isChecked" -->
 <md-select [(ngModel)]="color">
   <md-option *ngFor="let color of colors" [value]="color.id"> {{ color.name }}</md-option>
 </md-select>
+
+<hr>  
+<h1>Input</h1>
+<md-input-container>
+  <input 
+    ngModel
+    #username="ngModel"
+    name="username"
+    mdInput placeholder="Username" required>
+  <md-hint>Type a unique username.</md-hint>
+  <span mdSuffix>@domain.com</span>
+  <span mdPrefix>admin.</span>
+  <md-error *ngIf="username.invalid && username.errors.required">
+    The username is required.
+  </md-error>
+</md-input-container>
