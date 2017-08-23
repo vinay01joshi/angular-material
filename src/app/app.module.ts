@@ -13,7 +13,8 @@ import { MdCheckboxModule
         , MdNativeDateModule
   , MdIconModule, 
   MdButtonModule,
-        MdChipsModule} from '@angular/material';
+  MdChipsModule,
+        MdProgressSpinnerModule} from '@angular/material';
 import { MaterialFormControlsComponent } from './material-form-controls/material-form-controls.component';
 import { MaterialIconComponent } from './material-icon/material-icon.component';
 import { MaterialButtonsComponent } from './material-buttons/material-buttons.component';
@@ -37,7 +38,8 @@ import { MaterialButtonsComponent } from './material-buttons/material-buttons.co
     MdNativeDateModule,
     MdIconModule,
     MdButtonModule,
-    MdChipsModule
+    MdChipsModule,
+    MdProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

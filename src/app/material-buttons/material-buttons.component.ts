@@ -12,7 +12,14 @@ export class MaterialButtonsComponent implements OnInit {
     {name: 'Intermediate'},
     {name: 'Advanced'},
   ];
-  constructor() { }
+  progress=0;
+  timer;
+  constructor() {
+     this.timer = setInterval(()=> {
+      this.progress++;
+      if(this.progress ==100) clearInterval(this.timer)        
+    },20)
+   }
 
   ngOnInit() {
   }
