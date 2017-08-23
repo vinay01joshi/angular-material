@@ -14,17 +14,20 @@ import { MdCheckboxModule
   , MdIconModule, 
   MdButtonModule,
   MdChipsModule,
-        MdProgressSpinnerModule} from '@angular/material';
+  MdProgressSpinnerModule,
+        MdTooltipModule} from '@angular/material';
 import { MaterialFormControlsComponent } from './material-form-controls/material-form-controls.component';
 import { MaterialIconComponent } from './material-icon/material-icon.component';
 import { MaterialButtonsComponent } from './material-buttons/material-buttons.component';
+import { MaterialPopupsModelsComponent } from './material-popups-models/material-popups-models.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MaterialFormControlsComponent,
     MaterialIconComponent,
-    MaterialButtonsComponent
+    MaterialButtonsComponent,
+    MaterialPopupsModelsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { MaterialButtonsComponent } from './material-buttons/material-buttons.co
     MdIconModule,
     MdButtonModule,
     MdChipsModule,
-    MdProgressSpinnerModule
+    MdProgressSpinnerModule,
+    MdTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
