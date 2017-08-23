@@ -1,4 +1,6 @@
+import { EditCourseComponent } from './../edit-course/edit-course.component';
 import { Component, OnInit } from '@angular/core';
+import { MdDialog } from "@angular/material";
 
 @Component({
   selector: 'app-material-popups-models',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialPopupsModelsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MdDialog) { }
 
   ngOnInit() {
+  }
+
+  openDialog() {
+    this.dialog.open(EditCourseComponent)
+      .afterClosed()
+      .subscribe(result => console.log(result));
   }
 
 }
