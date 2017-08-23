@@ -15,7 +15,8 @@ import { MdCheckboxModule
   MdButtonModule,
   MdChipsModule,
   MdProgressSpinnerModule,
-        MdTooltipModule} from '@angular/material';
+  MdTooltipModule,
+        MdTabsModule} from '@angular/material';
 import { MaterialFormControlsComponent } from './material-form-controls/material-form-controls.component';
 import { MaterialIconComponent } from './material-icon/material-icon.component';
 import { MaterialButtonsComponent } from './material-buttons/material-buttons.component';
@@ -43,7 +44,8 @@ import { MaterialPopupsModelsComponent } from './material-popups-models/material
     MdButtonModule,
     MdChipsModule,
     MdProgressSpinnerModule,
-    MdTooltipModule
+    MdTooltipModule,
+    MdTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
