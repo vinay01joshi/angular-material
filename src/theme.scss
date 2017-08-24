@@ -1,25 +1,11 @@
+@import "~@angular/material/_theming";
 
-$color : green;
+@include mat-core();
 
-h1 {
-    color: $color
-}
+$app-primary: mat-palette($mat-blue,600);
+$app-accent: mat-palette($mat-yellow,700);
+$app-warn: mat-palette($mat-red);
 
-h2 {
-    color: $color
-}
+$app-theme: mat-light-theme($app-primary,$app-accent,$app-warn);
 
-@mixin soft-border($border-radius) {
-    border : 1px solid #ccc;
-    border-radius: $border-radius;
-    padding: 10px;
-}
-
-.box {
-  @include soft-border(5px);
-}
-
-.modern-box {
-    @include soft-border(10px);
-  //...
-}
+@include angular-material-theme($app-theme);
