@@ -15,7 +15,12 @@ export class MaterialPopupsModelsComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(EditCourseComponent)
+    this.dialog.open(EditCourseComponent,{
+      data: {
+        courseId: 1,
+        name: 'Angular-2-4'
+      }
+    })
       .afterClosed()
       .subscribe(result => console.log(result));
   }
